@@ -1,9 +1,10 @@
-def webdriver_post(path, params):
+def post(driver, path, params):
     """
+    :parm driver: your driver object
     :param path: url path to post request
     :param params: request payload
     """
-    
+
     driver.execute_script("""
     function post(path, params, method='post') {
         const form = document.createElement('form');
